@@ -1,0 +1,55 @@
+* {
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background: url("images/50.JPG");
+}
+.header{
+    float: right;
+    margin-top: 70px;
+    margin-right: 220px;
+    font-size: 20px;
+}
+.header a{
+    margin-left: 20px;
+    color: black;
+}
+.header a:hover{
+    color: #BA55D3;
+}
+.header .first{
+    color: 	#BA55D3;
+    font-size: 22px;
+}
+
+
+.succeed{
+    width: 500px;
+    position: relative;
+    top: 170px;
+    left: 270px;
+
+}
+.succeed .big{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.succeed .small{
+    font-size: 20px;
+    color:	red;
+}
+
+.lil-ghost{
+    width: 200px;
+    position: relative;
+    top: 223px;
+    left: 277px;
+}

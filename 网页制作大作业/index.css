@@ -1,0 +1,382 @@
+* {
+    border: 0;
+    list-style: none;  
+	text-decoration: none;
+    outline: none;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    color: #666;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+/*导航栏*/
+.header{
+	width: 100%;
+	height: 64px;
+	background-color: #2c2c2c;
+}
+.main{
+	width: 1100px;
+	margin: 0 auto;
+    position: relative;
+}
+.logo {
+    width: 150px;
+    height: 38px;
+    float: left;
+    margin: 13px 0 0 0;
+}
+.header .contain {
+    float: left;
+    font-size: 16px;
+    margin: 0 0 0 48px;
+}
+ul, ul li {
+    margin: 0;
+    padding: 0;
+}
+.nav-list li {
+    float: left;
+    height: 64px;
+    line-height: 64px;
+    font-size: 16px;
+    text-align: center;
+}
+.nav-list li a {
+    color: #fff;
+    display: block;
+    padding: 0 23px;
+}
+.nav-list li a:hover {
+    color: #e10101;
+    background-color: #1f1f1f;
+}
+.nav-list li a.curr {
+    color: #e10101;
+    background-color: #1f1f1f;
+}
+.nav-list .two{
+    width: 145px;
+    background-color: black;
+    opacity: 0.7;
+    display: none;
+    position: absolute;
+    top: 64px;
+    z-index: 1;
+}
+.nav-list .two li{
+    margin: 0 auto;
+}
+.nav-list>li:hover .two{
+    display: block;
+}
+.nav-list .two li a:hover{
+    color:#EE7600;
+    width:98px;
+    height: 60px;
+    background-color: #1f1f1f;
+}
+.nav-list .tuku{
+    left: 130px;
+}
+.nav-list .ziliao{
+    left: 55px;
+}
+.nav-list .xingwen{
+    width: 268px;
+    left: 160px;
+}
+.nav-list .xingwen li a:hover{
+    width: 50px;
+    height: 64px;
+}
+
+
+.research {
+    float: left;
+    width: 240px;
+    height: 32px;
+    background-color: #ffffff;
+    overflow: hidden;
+    margin: 16px 0 0 10px;
+    border-radius: 32px;
+}
+.research input{
+    outline: none;
+}
+.research .search_input{
+    width: 240px;
+    height: 20px;
+    line-height: 20px;
+    border: 0;
+    border-radius: 2px 0 0 2px;
+    color: #aaa;
+    font-size: 14px;
+    margin: 6px 0 0 16px;
+}
+
+.research  button{
+    position: relative;
+    bottom: 24px;
+    left: 200px;
+    background-color: transparent;
+    outline: none;
+}
+.right{
+    float: right;
+}
+.right .list li{
+    float: left;
+    height: 64px;
+    line-height: 64px;
+    font-size: 18px;
+    text-align: center;
+    margin-right: 20px;
+}
+.right .list span{
+    color: red;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.right .list li a{
+    color: white;
+}
+.iconfont{
+    font-weight: bold;
+}
+
+/*图片展示区*/
+.box{
+    width: 90%;
+    height: 480px;
+    margin: 30px auto;
+    background-color: #1f1f1f;
+    /*border: 1px solid black;*/
+}
+.box .inner{
+    width:830px;
+    height: 480px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.box .inner img{
+    width: 830px;
+    height: 480px;
+    /*margin: 0 auto;*/
+    /*vertical-align: top;*/
+}
+ul {
+    width: 400%;
+    position: relative;
+
+    /*left:0;*/
+    /*top: 0;*/
+}
+.inner li{
+    float: left;
+
+}
+
+ol {
+    position: absolute;
+    height: 20px;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+    padding: 5px;
+}
+ol li{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #fff;
+    margin: 5px;
+    cursor: pointer;
+
+}
+ol .current{
+    background-color: red;
+}
+#arr{
+    display: none;
+}
+#arr span{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -20px;
+    background: #fff;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: #000;
+    opacity: 0.5;
+    border: 1px solid #fff;
+}
+#arr #right {
+    right: 5px;
+    left: auto;
+}
+
+/*热点明星*/
+.stars{
+    width: 1100px;
+    margin: 5px auto 0;
+    border: 1px solid transparent;
+    border-bottom-color: gray;
+}
+.stars .title{
+    width: 1100px;
+    height: 40px;
+    margin: 5px auto;
+    border: 1px solid transparent;
+    border-bottom-color: gray;
+}
+.stars .title #big{
+    font-size: 20px;
+    color: black;
+    margin-right: 25px;
+    border: none;
+}
+.stars .title .left .icon-aixin{
+    color: red;
+    margin-right: 5px;
+    font-size: 20px;
+}
+.stars .title .left li{
+    float: left;
+    margin-right: 10px;
+    font-size: 15px;
+    line-height: 40px;
+    padding: 0 10px;
+}
+.stars .left #red a{
+    height: 24px;
+    line-height: 24px;
+    padding: 3px 11px;
+    background-color: #e30002;
+    color: #fff;
+    border-radius: 15px;
+}
+.stars .title  li a{
+    color: black;
+}
+.stars .title .left li a:hover{
+    height: 24px;
+    line-height: 24px;
+    padding: 3px 11px;
+    background-color: #e30002;
+    color: #fff;
+    border-radius: 15px;
+}
+.stars .title .right{
+    line-height: 40px;
+}
+.stars .title .right a:hover{
+    color: red;
+}
+
+.stars .stars-pictures{
+    width: 1100px;
+    margin: 20px auto;
+}
+.stars .stars-pictures span{
+    display: inline-block;
+    width: 142px;
+    height: 142px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 37px;
+    margin-top: 20px;
+}
+.stars .stars-pictures span img{
+    width: 100%;
+}
+.stars .stars-pictures span h3{
+    width: 90px;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid rgba(255,255,255,0.5);
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+    color: #fff;
+    bottom: 124px;
+    left: 50%;
+    margin: 0 0 0 -46px;
+    position: relative;
+    z-index: 2;
+}
+.stars-pictures h3:hover{
+    background-color: #EE7600;
+    border:none;
+}
+.stars-pictures .more{
+    position: relative;
+    bottom: 230px;
+}
+
+.name{
+    width: 100%;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e9e9e9;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.stars-name{
+    width: 1100px;
+    margin: 0 auto 10px;
+}
+.stars-name li{
+    float: left;
+    margin-right: 10px;
+    width: 80px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+}
+.stars-name li a{
+    color: black;
+}
+.stars-name li a:hover{
+    color: #fff;
+
+}
+.stars-name li:hover{
+    border: 1px solid #e30002;
+    background-color: #e30002;
+}
+.stars-name::after{
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+
+/*页脚*/
+.foot{
+    width: 100%;
+    background-color:#1f1f1f ;
+    border-top: 2px solid red;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.foot .foot-main{
+    width: 820px;
+    margin: 0 auto;
+    font-size: 13px;
+}
+.foot .foot-main p{
+    margin-bottom: 3px;
+    text-align:center;
+}

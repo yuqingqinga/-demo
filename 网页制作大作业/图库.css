@@ -1,0 +1,194 @@
+* {
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    color: #666;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+/*导航栏*/
+.header{
+    width: 100%;
+    height: 64px;
+    background-color: #2c2c2c;
+}
+.main{
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+.logo {
+    width: 150px;
+    height: 38px;
+    float: left;
+    margin: 13px 0 0 0;
+}
+.header .contain {
+    float: left;
+    font-size: 16px;
+    margin: 0 0 0 48px;
+}
+ul, ul li {
+    margin: 0;
+    padding: 0;
+}
+.nav-list li {
+    float: left;
+    height: 64px;
+    line-height: 64px;
+    font-size: 16px;
+    text-align: center;
+}
+.nav-list li a {
+    color: #fff;
+    display: block;
+    padding: 0 23px;
+}
+.nav-list li a:hover {
+    color: #e10101;
+    background-color: #1f1f1f;
+}
+.nav-list li a.curr {
+    color: #e10101;
+    background-color: #1f1f1f;
+}
+
+.research {
+    float: left;
+    width: 240px;
+    height: 32px;
+    background-color: #ffffff;
+    overflow: hidden;
+    margin: 16px 0 0 10px;
+    border-radius: 32px;
+}
+.research input{
+    outline: none;
+}
+.research .search_input{
+    width: 240px;
+    height: 20px;
+    line-height: 20px;
+    border: 0;
+    border-radius: 2px 0 0 2px;
+    color: #aaa;
+    font-size: 14px;
+    margin: 6px 0 0 16px;
+}
+
+.research  button{
+    position: relative;
+    bottom: 24px;
+    left: 200px;
+    background-color: transparent;
+    outline: none;
+}
+.right{
+    float: right;
+}
+.right .list li{
+    float: left;
+    height: 64px;
+    line-height: 64px;
+    font-size: 18px;
+    text-align: center;
+    margin-right: 20px;
+}
+.right .list span{
+    color: red;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.right .list li a{
+    color: white;
+}
+.iconfont{
+    font-weight: bold;
+}
+
+.catalogue{
+    width: 700px;
+    /*border: 1px solid black;*/
+    margin: 70px auto 0;
+    text-align: center;
+}
+.catalogue h3 a{
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    background-color: #eee;
+    padding: 0 18px;
+    margin: 0 10px 20px 10px;
+    font-size: 15px;
+    color: #333;
+}
+.catalogue .on{
+    background-color: #e30002;
+    color: #fff;
+}
+.catalogue a:hover{
+    background-color: #e30002;
+    color: #fff;
+}
+
+.pictures{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pictures ul li{
+    float: left;
+    margin-right: 20px;
+}
+.father{
+    width: 256px;
+    height: 368px;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+    margin-bottom: 60px;
+}
+.before,.after{
+    width: 256px;
+    height: 386px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.before{
+    background-image: url("images/1.png");
+}
+.after{
+    background-image: url("images/54.jpg");
+    transform: rotateY(-180deg);
+}
+.father:hover{
+    transform: rotateY(180deg);
+}
+
+
+/*页脚*/
+.foot{
+    width: 100%;
+    height: 200px;
+    /*background-color:#1f1f1f ;*/
+    /*border-top: 2px solid red;*/
+    /*padding-top: 13px;*/
+    /*padding-bottom: 13px;*/
+}
+.foot .foot-main{
+    width: 820px;
+    margin: 0 auto;
+    font-size: 13px;
+}
+.foot .foot-main p{
+    margin-bottom: 3px;
+    text-align:center;
+}

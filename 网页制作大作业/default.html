@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>明星娱乐</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+
+</head>
+<body>
+	<!-- 导航栏 -->
+	<div class="header">
+		<div class="main">
+			<div class="logo">
+				<a href="#">
+					<img src="./images/logo.png" alt="">
+				</a>
+			</div>
+			<div class="contain">
+				<ul class="nav-list">
+					<li>
+						<a href="#" class="curr">明星网</a>
+					</li>
+					<li>
+						<a href="#">资料</a>
+						<ul class="two ziliao">
+							<li><a href="#">内地明星</a></li>
+							<li><a href="#">港台明星</a></li>
+							<li><a href="#">日韩明星</a></li>
+							<li><a href="#">欧美明星</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="图库.html" target="_blank">图库</a>
+						<ul class="two tuku">
+							<li><a href="#">明星写真</a></li>
+							<li><a href="#">生活照</a></li>
+							<li><a href="#">活动现场</a></li>
+							<li><a href="#">影视剧照</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">星闻</a>
+						<ul class="two xingwen">
+							<li><a href="#">活动</a></li>
+							<li><a href="#">绯闻</a></li>
+							<li><a href="#">图片</a></li>
+							<li><a href="#">爆料台</a></li>
+							<li><a href="#">综艺</a></li>
+							<li><a href="#">电视</a></li>
+							<li><a href="#">电影</a></li>
+							<li><a href="#">音乐</a></li>
+							<li><a href="#">动态</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="research">
+				<form>
+					<label>
+						<input type="text" placeholder="请输入关键字" class="search_input" name="keyword" >
+					</label>
+					<button>
+						<span class="iconfont icon-RectangleCopy"></span>
+					</button>
+				</form>
+			</div>
+			<div class="right">
+				<ul class="list">
+					<li>
+						<a href="登录.html"><span class="iconfont icon-RectangleCopy2"></span>登录 </a>
+					</li>
+					<li>
+						<a href="#"><span class="iconfont icon-bofangjilu"></span>历史</a>
+					</li>
+					<li>
+						<a href="#" onclick="message()"><span class="iconfont icon-shoucang"></span>留言板</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="留言板.js"></script>
+	<!-- 图片展示区 -->
+	<div class="box" id="box">
+		<div class="inner">
+			<!--轮播图-->
+			<ul>
+				<li><a href="#"><img src="images/15.JPG" alt=""></a></li>
+				<li><a href="#"><img src="images/3.JPG" alt=""></a></li>
+				<li><a href="#"><img src="images/4.JPG" alt=""></a></li>
+			</ul>
+			<ol class="bar">
+
+			</ol>
+			<!--左右焦点-->
+			<div id="arr">
+				<span id="left">
+					<
+				</span>
+				<span id="right">
+					>
+				</span>
+			</div>
+
+		</div>
+	</div>
+	<script src="lunbotu.js"></script>
+
+	<!--热点明星-->
+	<div class="stars">
+
+		<div class="title">
+			<ul class="left">
+				<li id="big"><span class="iconfont icon-aixin"></span>热点明星</li>
+				<li id="red"><a href="#">全部分类</a></li>
+				<li><a href="#">内地</a></li>
+				<li><a href="#">港台</a></li>
+				<li><a href="#">日韩</a></li>
+				<li><a href="#">欧美</a></li>
+			</ul>
+			<div class="right">
+				<ul>
+					<li><a href="#">查看更多></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="stars-pictures">
+			<div class="first">
+				<span><a href="#">
+					<img src="images/32.JPG" alt="">
+					<h3>迪丽热巴</h3>
+<!--					<p class="text">迪丽热巴，1992年06月03日出生于乌</p>-->
+				</a>
+				</span>
+				<span><a href="#">
+					<img src="images/37.jpg" alt="">
+					<h3>杨幂</h3></a>
+				</span>
+				<span><a href="#">
+					<img src="images/33.JPG" alt="">
+					<h3>赵丽颖</h3></a>
+				</span>
+				<span><a href="#">
+					<img src="images/38.JPG" alt="">
+					<h3>朱正廷</h3></a>
+				</span>
+				<span><a href="#">
+					<img src="images/39.JPG" alt="">
+					<h3>尤长靖</h3></a>
+				</span>
+				<span><a href="#">
+					<img src="images/40.jpg" alt="">
+					<h3>刘亦菲</h3></a>
+				</span>
+			</div>
+			<div class="second">
+				<span><a href="#">
+					<img src="images/36.JPG" alt="">
+					<h3>林彦俊</h3></a>
+				</span>
+				<span><a href="#">
+					<img src="images/35.JPG" alt="">
+					<h3>黄明昊</h3></a>
+				</span>
+				<span><a href="#">
+					<img src="images/34.JPG" alt="">
+					<h3>易烊千玺</h3></a>
+				</span>
+				<span><a href="#">
+					<img src="images/41.JPG" alt="">
+					<h3>孟美岐</h3></a>
+				</span>
+				<span><a href="#">
+					<img src="images/43.JPG" alt="">
+					<h3>王琳凯</h3></a>
+				</span>
+				<span><a href="肖战.html" target="_blank">
+					<img src="images/51.JPG" alt="">
+					<h3>肖战</h3></a>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="name">
+		<div class="stars-name">
+			<ul>
+				<li><a href="#">鹿晗</a></li>
+				<li><a href="#">迪丽热巴</a> </li>
+				<li><a href="#">易烊千玺</a></li>
+				<li><a href="#">王源</a></li>
+				<li><a href="#">王俊凯</a></li>
+				<li><a href="#">杨幂</a></li>
+				<li><a href="#">赵丽颖</a></li>
+				<li><a href="#">鞠婧祎</a></li>
+				<li><a href="#">罗云熙</a></li>
+				<li><a href="#">邓伦</a></li>
+				<li><a href="#">魏大勋</a></li>
+				<li><a href="#">范冰冰</a></li>
+			</ul>
+			<br>
+			<br>
+			<ul>
+				<li><a href="#">李冰冰</a></li>
+				<li><a href="#">蔡徐坤</a> </li>
+				<li><a href="#">陈立农</a></li>
+				<li><a href="#">范丞丞</a></li>
+				<li><a href="#">黄明昊</a></li>
+				<li><a href="#">林彦俊</a></li>
+				<li><a href="#">朱正廷</a></li>
+				<li><a href="#">王子异</a></li>
+				<li><a href="#">王琳凯</a></li>
+				<li><a href="#">尤长靖</a></li>
+				<li><a href="#">林更新</a></li>
+				<li><a href="#">胡歌</a></li>
+			</ul>
+			<br>
+			<br>
+			<ul>
+				<li><a href="#">陈学冬</a></li>
+				<li><a href="#">李易峰</a> </li>
+				<li><a href="#">陈坤</a></li>
+				<li><a href="#">周迅</a></li>
+				<li><a href="#">蔡依林</a></li>
+				<li><a href="#">谢娜</a></li>
+				<li><a href="#">吴昕</a></li>
+				<li><a href="#">鞠婧祎</a></li>
+				<li><a href="#">罗云熙</a></li>
+				<li><a href="#">周洁琼</a></li>
+				<li><a href="#">李宇春</a></li>
+				<li><a href="#">章子怡</a></li>
+			</ul>
+			<br>
+			<br>
+			<ul>
+				<li><a href="#">许魏洲</a></li>
+				<li><a href="#">彭于晏</a> </li>
+				<li><a href="#">孟美岐</a></li>
+				<li><a href="#">吴宣仪</a></li>
+				<li><a href="#">赖美云</a></li>
+				<li><a href="#">yamy</a></li>
+				<li><a href="#">李紫婷</a></li>
+				<li><a href="#">段奥娟</a></li>
+				<li><a href="#">杨超越</a></li>
+				<li><a href="#">傅青</a></li>
+				<li><a href="#">紫宁</a></li>
+				<li><a href="#">徐梦洁</a></li>
+			</ul>
+			<br>
+			<br>
+			<ul>
+				<li><a href="#">鹿晗</a></li>
+				<li><a href="#">迪丽热巴</a> </li>
+				<li><a href="#">易烊千玺</a></li>
+				<li><a href="#">王源</a></li>
+				<li><a href="#">王俊凯</a></li>
+				<li><a href="#">杨幂</a></li>
+				<li><a href="#">赵丽颖</a></li>
+				<li><a href="#">鞠婧祎</a></li>
+				<li><a href="#">罗云熙</a></li>
+				<li><a href="#">邓伦</a></li>
+				<li><a href="#">魏大勋</a></li>
+				<li><a href="#">范冰冰</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="foot">
+		<div class="foot-main">
+			<p>中国互联网举报中心 举报邮箱：739051932@qq.com 违法和不良信息举报电话：15109803521</p>
+			<p>Copyrights © 2012-2016 明星网 www.mingxing.com, All rights reserved. &nbsp; 投稿邮箱:1224613916@qq.com</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>邮箱</title>
+    <style>
+        div{
+            width: 500px;
+            margin: 50px auto;
+        }
+        .sent-add{
+            width: 200px;
+            height: 30px;
+            margin-bottom: 20px;
+            display: block;
+        }
+        .sent-content{
+            width: 200px;
+            height: 45px;
+            display: block;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" placeholder="请输入邮箱地址" class="sent-add" id="input-email">
+        <textarea placeholder="请输入发送内容" class="sent-content"></textarea>
+        <input type="button" value="email" class="button" onclick="submitEmail()" id="btn">
+    </div>
+
+    <script>
+        var email = document.getElementById("input-email");
+
+        function submitEmail() {
+            var pa = /^([a-zA-Z]|[0-9])(\w|\-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})$/;
+            var input = email.value;
+            
+            if (pa.test(input)) {
+                alert("邮箱输入成功！")
+            }
+            else {
+                alert("邮箱格式错误！")
+            }
+        }
+    </script>
+</body>
+</html>

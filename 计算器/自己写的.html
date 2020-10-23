@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简易计算器实现</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            outline: none;
+        }
+        li{
+            list-style: none;
+        }
+        .conter{
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
+            left:50%;
+            margin-left: -125px; 
+            width: 250px;
+            height: 180px;
+            /*margin: 0 auto;*/
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        
+        .text{margin-bottom: 10px}
+        
+        input{
+            border: none;
+            border-radius: 5px;
+            width: 228px;
+            height: 30px;
+            position: relative;
+            top:4px;
+            left: 1px;
+            text-align: right;
+            color: #333;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 30px;
+            padding: 0 10px;
+            background-color: #ccc;
+        
+        }
+        #content ul{
+            width: 250px;
+            position: relative;
+            top: 1px;
+        }
+        #content li{
+            border-radius: 5px;
+            margin-bottom: 5px;
+            width: 60px;
+            height: 30px;
+            float: left;
+            background-color: #FFA500;
+            color: #ffffff;
+            text-align: center;
+            line-height:30px;
+            margin-left: 2px;
+            cursor: pointer;
+        }
+        #content li:hover{
+            background-color: antiquewhite;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conter">
+        <div class="text">
+           <input id="input" type="text" placeholder="0">
+        </div>
+        <div id="content">
+            <ul>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>+</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>-</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>×</li>
+                <li>0</li>
+                <li>C</li>
+                <li>=</li>
+                <li>÷</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+
+        var sOperation ='';
+        var sNum = 0;
+        var temp = '';
+        var isHasOperation = false;
+        window.onload = function () {
+            var lis = document.getElementsByTagName('li');
+            var i;
+            for(i=0;i<lis.length;i++){
+
+                lis[i].onmousedown = doInput;
+        
+                lis[i].onmouseout = function () {
+                    this.className = '';
+                }
+            }
+        }
+        
+        function doInput() {
+        
+            var kContent = this.innerHTML;
+            var oInput = document.getElementById('input');
+            switch(kContent)
+            {
+                case '+':
+                case '-':
+                case '×':
+                case '÷':
+                    sOperation = kContent;
+                    isHasOperation = true;
+                    temp = '';
+                    break;
+                case '=':
+                    oInput.value = calc(parseInt(sNum,10),parseInt(oInput.value,10),sOperation);
+                    sOperation = '';
+                    sNum = oInput.value;
+                    isHasOperation = false;//在运算之后，把标识符改成没有运算过得false
+                    temp = '';
+                    break;
+                case 'C':
+                    oInput.value = '0';
+                    sOperation = '';
+                    kContent = '';
+                    temp = '';
+                    sNum = 0;
+                    break;
+                default:
+                    if(temp !==''){//计算文本框中显示的数字
+                        oInput.value = parseInt(temp+kContent,10);
+                        temp=temp+kContent;
+                    }
+                    else {
+                        oInput.value = parseInt(kContent,10);
+                        temp = kContent;
+                    }
+                    if (!isHasOperation){//true有运算符号了，说明是第二位了，则直接将按钮值显示在屏幕上
+                    //false没有运算符号说明是第一位，需要一个变量来存储这位
+                        sNum=oInput.value;
+                    }
+                    break;
+            }
+        }
+        
+        function calc(num1,num2,operator) {
+            var result = 0;
+            switch(operator)
+            {
+                case '+': result = num1 + num2;break;
+                case '-': result = num1 - num2;break;
+                case '×': result = num1 * num2;break;
+                case '÷': result = num1 / num2;break;
+                default:result = num2;
+            }
+            return result;
+        }
+
+    </script>
+</body>
+</html>

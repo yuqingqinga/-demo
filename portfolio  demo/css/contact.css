@@ -1,0 +1,98 @@
+/*左侧*/
+.left-cont{
+    width: 49%;
+    height: 70%;
+    border-right: 1px grey solid;
+    margin: 20px 0  0 10px;
+    float:left;
+}
+
+.eamil-input{
+    color: black;
+    display: block;
+    margin: 60px 30px 0;
+    width: 80%;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    border-bottom: solid 1px grey;
+}
+.input-tip{
+    font-family:Dialog serif;
+    font-size: 18px;
+    color: transparent;
+    position: relative;
+    left: -30px;
+    animation: ease-in-out 2s 1 linear;
+}
+#subject-tip{
+    top: -50px;
+}
+
+#content-tip{
+    top: -135px;
+}
+#submit-email{
+    width: 150px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    background: linear-gradient(white,white,lightgray);
+    border: 1px solid darkgray;
+    box-shadow: 2px 3px 3px darkgray;
+}
+
+.inputing{
+    left: 30px;
+    color: #b532a2;
+    animation: tip-up ease-in-out .1s forwards;
+}
+
+@keyframes tip-up {
+    0%{   transform: translateY(0);}
+    100%{ transform: translateY(-30px);}
+}
+
+
+/*右侧*/
+@font-face {
+    font-family: arbn;
+    src: url("../static/arbn2plt.ttf");
+}
+.right-cont{
+    font-family: arbn fantasy;
+    margin: 100px 0  0 50px;
+    width: 43%;
+    height: 60%;
+    float: left;
+    text-indent: 2em;
+    font-size: 30px;
+}
+.contact-links{
+    margin-left: 70px;
+}
+
+.contact-icon{
+    margin: 70px 0;
+    float: left;
+}
+
+.iconfont{
+    font-size: 50px;
+}
+.contact-links a{
+    color: #565656;
+}
+.contact-icon:hover {
+    transform: translateY(-5px);
+}
+.contact-icon:hover :after{
+    content: " ";
+    position: absolute;
+    left: 74px;
+    top: 60px;
+    width: 20px;
+    height: 5px;
+    background-color: #565656;
+    border-radius: 50px;
+}

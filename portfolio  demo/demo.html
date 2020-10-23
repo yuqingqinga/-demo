@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <!--引入矢量图标-->
+    <link rel="stylesheet" type="text/css" href="static/iconfont.css">
+    <!--引入相同的样式-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--引入introduce样式-->
+    <link rel="stylesheet" href="css/introduce.css">
+    <!--引入protfolio样式-->
+    <link rel="stylesheet" href="css/protfolio.css">
+    <!--引入contact样式-->
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="js/onscroll.js"></script>
+</head>
+<body onscroll="show()">
+    <div id="navigation-contain">
+        <div id="navigation-con">
+            <span id="title">GaaraHan's Portfolio</span>
+            <ul id="navigation">
+                <li id="part1" class="current">
+                    <a href="#intro-contain" onclick="toclick1()"><span>Introduce</span></a>
+                </li>
+                <li id="part2">
+                    <a href="#pro-contain" onclick="toclick2()"><span>Protfolio</span></a>
+                </li>
+                <li id="part3">
+                    <a href="#cont-contain" onclick="toclick3()"><span>contact</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/toclick.js"></script>
+    <div class="spaceHolder"></div>
+    <div id="progress-bar"></div>
+
+    <!--Introduce-->
+    <div id="intro-contain" class="part-contain">
+        <div id="introPic-contain">
+            <div id="headPic"></div>
+            <div class="intro-title">about me</div>
+            <h5 id="intro-head">
+                <label class="intro-name">Azora Chin </label>
+                <label id="foreword"> ---- A great singer</label>
+            </h5>
+        </div>
+        <pre class="intro-self">
+        - want     to     learn     everything
+
+        - but     nothing     learned</pre>
+    </div>
+
+    <!--Protfolio-->
+    <div id="pro-contain" class="part-contain">
+        <div class="prot-title">My Protfolio</div>
+        <div class="prot-picture">
+            <img src="static/port2.png" alt="">
+            <div class="pic-contain"></div>
+            <div class="pic-title">
+                protfolio
+                <hr>
+            </div>
+            <div class="pic-text"> Nothing  to show but this page</div>
+        </div>
+    </div>
+
+    <!--contact-->
+    <script src="js/contact.js"></script>
+    <div id="cont-contain" class="part-contain">
+        <div class="prot-title">contact with me</div>
+        <div class="left-cont">
+            <form id="eamil-form" name="email-form">
+                <textarea id="email-subject" class="eamil-input" placeholder="Subject"
+                          oninput="getInputfirst(this)" autocomplete="off"></textarea>
+                <div class="input-tip" id="subject-tip">Subject</div>
+                <textarea id="email-content" class="eamil-input" placeholder="Content" rows="5"
+                          oninput="getInputsecond(this)" autocomplete="off"></textarea>
+                <div class="input-tip" id="content-tip">Content</div>
+                <input id="submit-email" value="Email" type="button">
+            </form>
+        </div>
+        <div class="right-cont">
+            You can use contact me in email which in the left or the following method
+            <div class="contact-links">
+                <div id="github" class="contact-icon">
+                    <a href="#"><i class="iconfont icon-github"></i></a>
+                </div>
+                <div id="twitter" class="contact-icon">
+                    <a href="#"><i class="iconfont icon-twitter3"></i></a>
+                </div>
+                <div id="linkedin" class="contact-icon">
+                    <a href="#"><i class="iconfont icon-lingying"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

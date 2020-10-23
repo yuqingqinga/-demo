@@ -1,0 +1,112 @@
+/*自定义字体*/
+@font-face {
+    font-family: Mae;
+    src: url("../static/Maestro-Regular.ttf");
+}
+
+#introPic-contain{
+    position: relative;
+    top: 50px;
+    left: 40px;
+}
+#headPic{
+    border:1px solid grey;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 1px;
+    position: relative;
+    width:150px;
+    height:150px;
+    top:20px;
+    left:40px;
+    background-image: url("../static/25.JPG");
+    background-size:110% 100%;
+    animation: pulse 3s linear infinite;
+}
+/*脉冲效果*/
+@keyframes pulse {
+    0%{
+        box-shadow: 0 0 0 0    rgba(87,206,255,0.7), 0 0 0 0 rgba(87,206,255,0.8);
+    }
+
+    40%{
+        box-shadow: 0 0 0 30px rgba(87,206,255,0),   0 0 0 0 rgba(87,206,255,0.8);
+    }
+
+    80%{
+        box-shadow: 0 0 0 30px rgba(87,206,255,0),   0 0 0 30px rgba(87,206,255,0);
+    }
+
+    100%{
+        box-shadow: 0 0 0 0    rgba(87,206,255,0), 0 0 0 30px rgba(87,206,255,0);
+    }
+
+}
+
+
+.intro-title{
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 80px;
+    left: 600px;
+    font-family: Mae,fantasy;
+    font-size: 40px;
+}
+
+#intro-head *{
+    position: relative;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #b532a2;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.intro-name{
+    float: left;
+    line-height: 1.5em;
+}
+
+#foreword{
+    margin-left: 20px;
+    float: left;
+    font-size: 30px;
+    width: 0;
+    height: 1.5em;
+    line-height: 1.5em;
+    overflow: hidden;
+    white-space:nowrap;
+    /*规定段落中的文本不进行换行：*/
+}
+
+/*个人介绍*/
+.intro-self{
+    position: absolute;
+    font-size: 25px;
+    margin: 200px 100px;
+    font-family: Mae, fantasy;
+}
+
+/*打字动画效果*/
+#headPic:hover~#intro-head #foreword{
+    animation: typing 3s steps(20,end) forwards,
+                blank-typ 1s step-end infinite;
+}/*表示选择与#headPic同级别的所有#intro-head*/
+
+@keyframes typing {
+    from{
+        width: 0;
+        border-right: 2px solid;
+    }
+    to{
+        width: 10em;
+        border-right: 2px solid;
+    }
+}
+@keyframes blank-typ {
+    50%{
+        border-color: transparent;
+    }
+}
+
